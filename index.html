@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Icons</title>
+    <link rel="stylesheet" href="stylesheetey1.css">
+    <style>
+       
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="content" id="home">
+        <div class="about-me">
+
+            <h1 style="text-align: center">Ethan Yeung</h1>
+            <div class="typing-effect" id="typing-effect"></div>
+        </div>
+    </div>
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i>
+    </div>
+    <div class="scroll-icon" id="scroll-icon"><i class="fas fa-chevron-down"></i></div>
+    <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i><span id="menu-text"></span>
+    </div>
+    <div class="button-container" id="button-container">
+        <a href="#home" onclick="closeMenu()"><i class="fas fa-home"></i> Home</a>
+        <a href="#about" onclick="closeMenu()"><i class="fas fa-user"></i> About</a>
+        <a href="#portfolio" onclick="closeMenu()"><i class="fas fa-briefcase"></i> Portfolio</a>
+	<a href="#timeline" onclick="closeMenu()"><i class="fas fa-clock"></i> Timeline</a>
+        <a href="#blog" onclick="closeMenu()"><i class="fas fa-blog"></i> Blog</a>
+        <a href="#contact" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+    <div class="aboutme" id="about">
+        <h1>About Me</h1>
+	<br>
+        <p class="topabout">
+            I'm a high school student with a deep passion for coding and technology. When I'm not studying, you can find me experimenting with new programming languages, working on personal projects, or exploring the latest tech trends. I'm fascinated by the endless possibilities that coding offers and enjoy learning about innovative solutions to real-world problems. As a curious and driven individual, I'm always looking for ways to improve my skills, expand my knowledge, and make a positive impact through technology.
+        </p>
+        <img class="myimage" src="ethanphoto.jpg" alt="Image of me" width="500" height="500">
+        <div class="section-education-section">
+            <h3>Education</h3>
+            <p>I am currently pursuing my high school education with a focus on computer science and technology.</p>
+        </div>
+        <div class="section-skills-section">
+            <h3>Languages I Know</h3>
+	    <p style="color: var(--section-item-text-color);">These are a few programming languages I have been learning along with how comfortable I am with them.</p>
+            <ul>
+                <li>
+                    <span class="fab fa-python"> Python</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 70%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="fab fa-js-square"> Javascript</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 30%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="fab fa-html5"> HTML5</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 50%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="fab fa-css3"> CSS3</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 55%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="fab fa-swift"> Swift</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 70%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="fab fa-java"> Java</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 60%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="fa-solid fa-database"> SQL</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 10%;"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+ 
+	        <div class="section-skills-section">
+            <h3>My Transferable Skills</h3>
+	    <p style="color: var(--section-item-text-color);">These are a few programming languages I have been learning along with how comfortable I am with them.</p>
+            <ul>
+                <li>
+                    <span class="fa-solid fa-table-columns"> Organization</span>
+                    <div class="bar-container">
+                        <div class="bar1" style="width: 100;"></div>
+                    </div>
+                </li>
+		<li>
+                    <span class="fa-regular fa-face-smile"> Communcation</span>
+                    <div class="bar-container">
+                        <div class="bar1" style="width: 100;"></div>
+                    </div>
+                </li>
+		<li>
+                    <span class="fa-regular fa-clock"> Time management</span>
+                    <div class="bar-container">
+                        <div class="bar1" style="width: 100;"></div>
+                    </div>
+                </li>
+		<li>
+                    <span class="fa-solid fa-palette"> Creativity</span>
+                    <div class="bar-container">
+                        <div class="bar1" style="width: 100;"></div>
+                    </div>
+                </li>
+		<li>
+                    <span class="fa-solid fa-brain"> Logical thinking</span>
+                    <div class="bar-container">
+                        <div class="bar1" style="width: 100;"></div>
+                    </div>
+                </li>
+        </div>
+	<section class="section-skills-section">
+    <h3>Hobbies</h3>
+    <p style="color: var(--section-item-text-color);">These are a few of the things I enjoy.</p>
+    <ul>
+        <!-- Hobby 1 -->
+        <li>
+            <span class="fas fa-swimmer"> Swimming</span>
+            <div class="bar-container">
+                <div class="bar1" style="width: 85%;"></div>
+            </div>
+        </li>
+
+        <!-- Hobby 2 -->
+        <li>
+            <span class="fas fa-gamepad"> Playing video games</span>
+            <div class="bar-container">
+                <div class="bar1" style="width: 75%;"></div>
+            </div>
+        </li>
+
+        <!-- Hobby 3 -->
+        <li>
+            <span class="fas fa-laptop-code"> Coding</span>
+            <div class="bar-container">
+                <div class="bar1" style="width: 95%;"></div>
+            </div>
+        </li>
+
+        <!-- Hobby 4 -->
+        <li>
+            <span class="fas fa-bed"> Sleeping</span>
+            <div class="bar-container">
+                <div class="bar1" style="width: 60%;"></div>
+            </div>
+        </li>
+
+        <!-- Hobby 5 -->
+        <li>
+            <span class="fas fa-tools"> Exploring new frameworks and tools</span>
+            <div class="bar-container">
+                <div class="bar1" style="width: 80%;"></div>
+            </div>
+        </li>
+    </ul>
+</section>
+    </div>
+    <div class="portfolio" id="portfolio">
+                <h1>My Portfolio</h1>
+		<div class="portfolio-projects>
+                <div class="projects">
+                        <div class="project">
+                                        <div class="carousel">
+                                                        <img src="javamemorygame.jpeg" alt="Memory Game" class="active">
+                                                        <img src="javamemomorygamehome.png" alt="Memory Game Home Page">
+                                                        <button class="arrow left" onclick="prevSlide(this)">&#10094;</button>
+                                                        <button class="arrow right" onclick="nextSlide(this)">&#10095;</button>
+                                        </div>
+                                        <h3>Memory Game</h3>
+                                        <p>This project was for my computer Science Course. I used Java Swing a popular GUI interface. </p>
+                                        <p><strong>Languages:</strong></p>
+                                        <p>
+                                                        <i class="fab fa-java" title="HTML" style="font-size: 20px;"></i> 100%
+                                        </p>
+                                        <button onclick="window.location.href='https://github.com/yourusername/project1'">View on GitHub</button>
+                        </div>
+                        <div class="project">
+                                        <div class="carousel">
+                                                        <img src="pomodoroappmain.png" alt="Pomodoro App" class="active">
+                                                        <img src="pomodoroappstatistics.png" alt="Pomodoro App">
+                                                        <button class="arrow left" onclick="prevSlide(this)">&#10094;</button>
+                                                        <button class="arrow right" onclick="nextSlide(this)">&#10095;</button>
+                                        </div>
+                                        <h3>Pomodoro Timer</h3>
+                                        <p>Using the Swift language, I developed a pomodoro app in XCode. This pomodoro timer included settings, statistics and an area to add tasks.</p>
+                                        <p><strong>Languages:</strong></p>
+                                        <p>
+                                                        <i class="fab fa-swift" title="Swift" style="font-size: 20px;"></i> 100%<p>
+                                        <button onclick="window.location.href='https://github.com/ethanY28/project2'">View on GitHub</button>
+                        </div>
+                      
+                </div>
+		</div>
+        </div>
+	<div class="largecontainertimeline">
+	<div class="containertimeline" id="timeline">
+	<h1 style="text-align: center; font-weight: bold; padding: 20px, 50px; color: var(--text-color)">Timeline</h1>
+
+                <div class="timeline-item left">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-item-content">
+                                <div>
+                                        <h2>Started Learning Violin</h2>
+                                        <p>I started playing violin and had private lessons in 2018, I took the Royal Conservatory of Music level 5 exam and passed.</p>
+                                </div>
+                                <img src="https://img.icons8.com/?size=100&id=229&format=png&color=000000" alt="Violin Icon">
+                        </div>
+                </div>
+                <div class="timeline-item right">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-item-content">
+                                <div>
+                                        <h2>Started Playing Badminton</h2>
+                                        <p>I went to a badminton club and participated in Provincial competitions. I won the consolation round for doubles and made it to the consolation round finals for singles </p>
+                                </div>
+                                <img src="https://img.icons8.com/?size=100&id=74340&format=png&color=000000" alt="Badminton Icon">
+                        </div>
+                </div>
+                <div class="timeline-item right">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-item-content">
+                                <div>
+                                        <h2>Started as a Tech Coach volunteer</h2>
+                                        <p>Volunteering for Vaughan Public Libraries, I helped and am helping elderly with using technology.</p>
+                                </div>
+                                <img src="https://img.icons8.com/?size=100&id=1345&format=png&color=000000" alt="Computer Icon">
+                        </div>
+                </div>
+                <div class="timeline-item left">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-item-content">
+                                <div>
+                                        <h2>Started learning to code in Python</h2>
+                                        <p>I used the Python Institute's resources and took the Certified Entry-Level Python Programmer certificate.</p>
+                                </div>
+                                <img src="https://img.icons8.com/?size=100&id=12584&format=png&color=000000" alt="Python Icon">
+                        </div>
+                </div>
+                <div class="timeline-item right">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-item-content">
+                                <div>
+                                        <h2>Started Lifeguarding and Swim Instructing at 2 cities</h2>
+                                        <p>As a lifeguard, I help keep the pool safe and as a swim instructor, I help young children and adults learn to swim.</p>
+                                </div>
+                                <img src="https://img.icons8.com/?size=100&id=2P9dpM7FAH93&format=png&color=000000" alt="Ring buoy">
+                        </div>
+                </div>
+                <div class="timeline-item right">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-item-content">
+                                <div>
+                                        <h2>Started learning Java</h2>
+                                        <p>I took my school's grade 11 intro to computer science course and learned the basics of java including GUI.</p>
+                                </div>
+                                <img src="https://img.icons8.com/?size=100&id=2572&format=png&color=000000" alt="Java icon">
+                        </div>
+                </div>
+                <div class="timeline-item left">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-item-content">
+                                <div>
+                                        <h2>Started learning HTML5, CSS3 and Javascript</h2>
+                                        <p>Using online resources, I started learning the basics of website design.</p>
+                                </div>
+                                <img src="https://img.icons8.com/?size=100&id=u6SGklrDSZ3b&format=png&color=000000" alt="web development">
+                        </div>
+                </div>
+                <div class="timeline-item right">
+                                <div class="timeline-year">2025+</div>
+                                <div class="timeline-item-content">
+                                                <div>
+                                                                <h2>Future</h2>
+                                                                <p>I am continueing to improve my coding abilities in Swift, web developement, Java and Python along with keeping well balanced by participating in extracurriculars and other work.</p>
+                                                </div>
+                                                <img src="https://img.icons8.com/?size=100&id=6906&format=png&color=000000" alt="Future clock">
+                                </div>
+                </div>
+  
+        </div>
+    <div class="blog" id="blog">
+        <div class="blog">
+                <h1>My Blog</h1>
+                <div class="posts">
+                        <div class="post">
+                                        <h3>Recent accomplishment (Python Institute)</h3>
+                                        <p>Dec 2024. I recently took my Python Institute PCEP exam and passed.</p>
+                        </div>
+                        <div class="post">
+                                        <h3>Recent accomplishment (Ontario)</h3>
+                                        <p>Dec 2024. I went to a driving test center and took the G1 entry exam/test and passed. Now I can drive.</p>
+                        </div>
+                        <div class="post">
+                                        <h3>Recent accomplishment (IBM)</h3>
+                                        <p>Jan 2025. I recently completed my IBM course on Web Developement.</p>
+                        </div>
+                        <!-- Repeat for other blog posts -->
+                </div>
+                <div class="view-all">
+                <!--<a href="blogey1.htm">Learn More</a>-->
+		</div>
+           
+  </section>
+        <script>
+      document.querySelectorAll('.portfolio-item').forEach(item => {
+        item.addEventListener('click', () => {
+          item.classList.toggle('clicked');
+        });
+      });
+        </script>
+                </div>
+	</div>
+
+    </div>
+    <div class="contact-area" id="contact">
+        <h2 style="text-align: center; color: var(--text-color)">Contact Me</h2>
+        <form class="contact-form" action="mailto:eyguard@gmail.com" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <br>
+        <button type="submit">Send Message</button>
+    </form>
+        <div class="contactright">
+        </div>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/ethan_y28/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://ca.linkedin.com/in/ethan-yeung-7a4a77334" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ethanY28/EthanYeung" target="_blank"><i class="fab fa-github"></i></a>
+	    <a href="https://www.credly.com/users/ethan-yeung24" style="font-family: Optima, sans-serif; text-decoration: none;" target="_blank"><i></i>C</a>
+        </div>
+        <p style="text-align: center; color: var(--text-color)">©2025 Ethan Yeung</p>
+    </div>
+    <script type="text/javascript" src="javascriptey1.js"></script>
+    <script>
+        function toggleMenu() {
+            const buttonContainer = document.getElementById('button-container');
+            buttonContainer.classList.toggle('active');
+            
+            const menuText = document.getElementById('menu-text');
+            menuText.textContent = buttonContainer.classList.contains('active') ? 'Close' : 'Menu';
+            
+            const menu = document.querySelector('.menu');
+            if (menu) {
+                menu.classList.toggle('open');
+            }
+        }
+
+        function closeMenu() {
+            const buttonContainer = document.getElementById('button-container');
+            buttonContainer.classList.remove('active');
+            const menuText = document.getElementById('menu-text');
+            menuText.textContent = 'Menu';
+            
+            const menu = document.querySelector('.menu');
+            if (menu) {
+                menu.classList.remove('open');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('#home, #about, #portfolio, #timeline, #blog, #contact');
+            const menuText = document.getElementById('menu-text');
+
+            window.addEventListener('scroll', () => {
+                let current = 'Menu';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 60) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (!document.getElementById('button-container').classList.contains('active')) {
+                    menuText.textContent = current.charAt(0).toUpperCase() + current.slice(1);
+                }
+            });
+        });
+                function nextSlide(button) {
+                        const carousel = button.closest('.carousel');
+                        const images = carousel.querySelectorAll('img');
+                        let activeIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+                        images[activeIndex].classList.remove('active');
+                        activeIndex = (activeIndex + 1) % images.length;
+                        images[activeIndex].classList.add('active');
+                }
+		document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('.section, myimage, .topabout, .project, .blog .post, .section-skills-section li, .timeline-item-content, .languages-section li');
+
+        const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                                entry.target.classList.add('visible');
+                        }
+                });
+        }, {
+                threshold: 0.1
+        });
+
+        sections.forEach(section => {
+                observer.observe(section);
+        });
+});
+
+                function prevSlide(button) {
+                        const carousel = button.closest('.carousel');
+                        const images = carousel.querySelectorAll('img');
+                        let activeIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+                        images[activeIndex].classList.remove('active');
+                        activeIndex = (activeIndex - 1 + images.length) % images.length;
+                        images[activeIndex].classList.add('active');
+                }
+		document.addEventListener("DOMContentLoaded", function() {
+                        var screenWidth = window.innerWidth;
+                        var container = document.querySelector('.container');
+                        container.style.maxWidth = screenWidth + 'px';
+                });
+ 
+    </script>
+</body>
+</html>
+
+
